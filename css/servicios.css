@@ -1,0 +1,125 @@
+body{
+    background-color: rgb(100, 99, 99) ;
+    
+}
+
+main {
+    font-family: 'Teko', sans-serif;
+    background-color: #333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 30px;
+    
+}
+
+main p{
+    color: #fff;
+    text-align: center;
+}
+
+#tituloservicios, #Contactoh1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+section.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.carta {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.carta:hover {
+    transform: rotateY(180deg);
+}
+
+.cfrente {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.catras {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+section.carta section {
+    width: 380px;
+    height: 350px;
+    box-sizing: border-box;
+    margin: 20px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    z-index: 0;
+}
+
+section.carta section img {
+    border-bottom: 2px solid black;
+}
+
+form{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+input[type = "radio"]{
+    display:none;
+}
+
+.clasificacion{
+    direction: rtl;/* right to left */
+    unicode-bidi: bidi-override;/* bidi de bidireccional */
+}
+
+
+main form p.clasificacion label{
+    color: rgb(85, 82, 82);
+    font-size: 3em;
+}
+
+main form p.clasificacion label:hover{
+    color:orange;
+}
+
+input[type = "radio"]:checked ~ label{
+    color:orange;
+}
+
+@media(max-width:720px){
+
+    main {
+        width: 95%;
+        margin: 10px;
+    }
+
+    section.carta section, section.carta section img{
+        width: 300px;
+        
+    }
+
+    section.carta section img{
+        height: 250px;
+        width: 290px;
+    }
+}

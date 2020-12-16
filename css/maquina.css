@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(100, 99, 99) ;
+}
+
+main {
+    font-family: 'Teko', sans-serif;
+    background-color: #333;
+    margin: 50px;
+}
+
+#titulomaquinaria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+section.maquinaria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+
+section.maquinaria section {
+    overflow: hidden;
+    width: 380px;
+    height: 350px;
+    box-sizing: border-box;
+    margin: 20px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.7s ease;
+}
+
+section.maquinaria section img {
+    border-bottom: 2px solid black;
+}
+
+section.maquinaria section:Hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+main .o{
+    min-width: 380px;
+}
+
+@media(max-width:720px){
+
+    main {
+        width: 95%;
+        margin: 10px;
+    }
+
+    section.carta section, section.carta section img{
+        width: 300px;
+    }
+
+    section.carta section img{
+        height: 300px;
+        width: 290px;
+    }
+
+    main .o{
+        min-width: 260px;
+        
+    }
+}
+
